@@ -1,6 +1,5 @@
 ---
-tags:
-  - linux
+tags: linux
 title: Shell
 categories: linux
 date: 2023-10-09
