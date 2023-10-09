@@ -1,9 +1,10 @@
 ---
-tags: linux
 title: Shell
-categories: linux
 date: 2023-10-09
+categories: linux
+tags: linux
 ---
+
 # Shell 
 Given that so many servers run Linux, it is imperative to understand how to utilize the Linux shell. These are frequently employed because Linux servers are less prone to errors than Windows servers. For instance, Linux is frequently used to power web servers. Effective management of the operating system needs knowledge of and proficiency with the Shell, a crucial component of Linux. What did it look like when we initially converted from Windows to Linux? 
 
