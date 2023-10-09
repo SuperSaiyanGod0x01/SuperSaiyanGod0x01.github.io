@@ -2,7 +2,7 @@
 tags:
   - linux
 title: Shell
-Category: linux
+categories: linux
 date: 2023-10-09
 ---
 # Shell 
