@@ -1,8 +1,8 @@
 ---
 title: Shell
 date: 2023-10-09
-categories: linux
-tags: linux
+categories: [linux]
+tags: [linux]
 ---
 
 # Shell 
