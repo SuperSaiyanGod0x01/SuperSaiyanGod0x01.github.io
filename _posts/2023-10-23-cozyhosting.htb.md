@@ -1,7 +1,7 @@
 ---
 title: Cozy Hosting
 
-date: 2023-10-09
+date: 2023-10-25
 categories:
   - HTB
 tags:
