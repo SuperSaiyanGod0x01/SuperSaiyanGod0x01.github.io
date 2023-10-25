@@ -69,18 +69,18 @@ Now, let's stabilize this reverse shell and download the file we are seeing in t
 
 As we have stabilized our shell, let's download the jar file and see what it is. After downloading and looking closely into the file, we came to know that this is the website's source code file. And in this file, we found credentials that seems like `postgresSQL` login credentials. Let's use these credentials and see if it works.
 ```credentials
-postgres:Vg&nvzAQ7XxR
+postgres:************
 ```
 
 The above credentials did gave us access to the database. After logging into the postgres, there was a database named `cozyhosting`. After looking into the database, we got some users with their password hashes.
 
-![](https://i.imgur.com/KDmK8tm.png)
+![](https://i.imgur.com/XQ2cc4W.png)
 
 Let's grab these hashes and see what we can do with the cracked hashes. With the hashes, there was a home directory for the user named `josh`. This might be the actual user on this box. Let's pass these hashes to hashcat and see what we can get. After the hascat is done, we are left with the followings;
 
 ```
-admin:manchesterunited
-josh:manchesterunited
+admin:<cracked_password>
+josh:<cracked_password>
 ```
 
 Lets try to ssh into the machine and see if we can get any connection. The admin user didn't work but the josh user worked and we have the user level access on the machine 😃.
@@ -95,6 +95,6 @@ Now we are heading to our last stage of this machine i.e., privilege escalation.
 
 As we can see, we do have permissions to run something with root privileges. Let's head over to [GTFObins](https://gtfobins.github.io) and see how we can use ssh to spawn a root shell. GTFObins gave us a payload that will spawn us a root shell. Lets use it and get the root flag.
 
-![](https://i.imgur.com/HPGFcKq.png)
+![](https://i.imgur.com/qviAnso.png)
 
 And this machine is rooted. It was a great journey so far. I hope you guys enjoyed it and learned something new. If you think there is some space for improvement or I explained something wring, feel free to ping me 😉. Until then, Good Bye!
